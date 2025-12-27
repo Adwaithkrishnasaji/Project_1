@@ -6,7 +6,6 @@
     --dark: #1e293b;
     --bg-deep: #121e2c;
     --light: #f8fafc;
-    --hover-light: #b8edfc;
 }
 
 body {
@@ -16,7 +15,6 @@ body {
     background-color: var(--bg-deep);
     color: var(--light);
 }
-
 
 nav {
     background: var(--bg-deep);
@@ -47,14 +45,12 @@ nav {
     text-decoration: underline;
 }
 
-
 .hero {
     padding: 100px 5%;
     text-align: center;
     background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
     color: white;
 }
-
 
 .btn {
     position: relative;
@@ -70,6 +66,7 @@ nav {
     border: none;
     cursor: pointer;
 }
+
 
 .btn::before {
     content: "";
@@ -91,41 +88,40 @@ nav {
     transform: translateY(-3px);
 }
 
-h2 {
-    margin-top: 20px; 
-    letter-spacing: 4px;
-    margin-bottom: 20px;
-    font-size: 3rem;
-    font-weight: 700;
-    line-height: 1.2;
+
+.why-work {
+    padding: 60px 5% 20px 5%;
     text-align: center;
 }
 
+h2 {
+    letter-spacing: 2px;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
 
 .features {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 30px;
-    padding: 80px 5%;
+    padding: 40px 0;
 }
 
 .card {
-    background-color: var(--bg-deep); 
+    background-color: #1a2635; 
     padding: 40px;
     border-radius: 20px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.2); 
     text-align: center;
-    color: white; 
-    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
+    transition: all 0.4s ease; 
     border: 1px solid rgba(255,255,255,0.1);
 }
 
 .card:hover {
     transform: translateY(-15px);
     background: var(--teen-green);
-    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
 }
-
 
 .card:hover h3, .card:hover p {
     color: var(--bg-deep);
@@ -135,6 +131,5 @@ footer {
     text-align: center;
     padding: 60px 5%;
     background-color: var(--bg-deep);
-    color: var(--light);
     border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
